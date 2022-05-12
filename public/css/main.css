@@ -5,28 +5,52 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     background-color: #000000;
+}
+
+svg {
+    font-size: 22px;
+}
+
+canvas{
+    padding: 20px;
+    background-color: #0c0c0c;
+    width: 60% !important;
+    height: 60% !important;
+    border-radius: 12px;
 }
 
 aside {
     width: 15%;
-    padding-left: .5rem;
     float: left;
-    background-color: #101010;
+    background-color: #0b0b0b;
     height: 100vh;
-    padding: 40px 30px;
+    padding-top: 40px;
 }
 
-aside h1{
-    color:#087dca;
+aside h1 {
+    color: #087dca;
+    text-align: center;
 }
 
-#tabs{
-    display:grid;
-    row-gap: 40px;
+#tabs {
+    display: grid;
     color: white;
-    margin-top: 60px;
+    margin-top: 40px;
+}
+
+.tab-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 30px;
+    color: #ccc;
+}
+
+.tab-link:hover {
+    background-color: #101010;
+    color: #087dca;
 }
 
 .tab-link a {
@@ -35,24 +59,35 @@ aside h1{
     color: var(--black);
 }
 
-main{
+main {
     height: 100vh;
     color: white;
-    padding: 40px 20px;
-    float:left;
+    padding: 40px 80px;
+    float: left;
     width: 80em;
 }
 
-.title{
-    margin-left: 40px;
+.title-heading{
+    color:#087dca;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-footer {
-    display: grid;
-    justify-items:center;
-    background-color: #101010;
+.content{
+    margin-top: 40px
+}
+
+.chart{
+    display: flex;
+    column-gap: 20px;
+}
+
+.report{
     padding: 40px;
-    color:white;
-    bottom: 0;
+    background-color: #0c0c0c;
+    border-radius: 12px;
 }
 
+.text-body{
+    color: #cccccc;
+}
